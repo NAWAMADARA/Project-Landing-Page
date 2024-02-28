@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
   }
   .container {
     display: flex;
@@ -55,7 +56,7 @@ body, html {
       font-size: 400%;
   }
   .landing_button{
-      background-color: rgb(255, 75, 75);
+      background-color: rgb(255, 60, 60);
       border: none;
       border-radius: 4px;
       font-weight: bold;
@@ -71,6 +72,7 @@ body, html {
       background-color: rgb(15, 15, 15);
       list-style: none;
       font-weight: bold;
+      padding: 10px;
   }
   nav ul{
       display: flex;
@@ -78,6 +80,10 @@ body, html {
       gap: 20px;
       margin-right: 10px;
       list-style: none;
+  }
+  nav ul a{
+      text-decoration: none;
+      color: white;
   }
   .header_div{
       display: flex;
@@ -88,6 +94,10 @@ body, html {
   .header_div nav{
       align-items: center;
       padding-top: 15px;
+  }
+  .header_nav1 a{
+      text-decoration: none;
+      color: white;
   }
   .header_input{
       padding: 5px;
@@ -103,4 +113,84 @@ body, html {
   .nav_img{
       width: 15px;
   }
-  
+ .more_topics{
+     height: 100vh;
+     background-color: white;
+     padding: 50px;
+ }
+ .topics_items{
+     display: flex;
+     justify-content: space-between;
+ }
+ .box{
+     width: 300px;
+     height: 500px;
+     background-position: center;
+     background-size: cover;
+     transition: transform 0.3s;
+     overflow: hidden;
+ }
+ .box .text{
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: left 0.5s ease;
+    font-weight: bold;
+    font-size: 30px;
+ }
+ .box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box:hover .text {
+    left: 0;
+}
+ .more_topics_h1{
+     padding-bottom: 60px;
+ }
+ .box1{
+     background-image: url('https://www.nasa.gov/wp-content/uploads/2023/03/space_shuttle_columbia_launching.jpeg?w=1041');
+ }
+ .box2{
+     background-image: url('https://images.alphacoders.com/530/530505.jpg');
+ }
+ .box3{
+     background-image: url('https://nmaahc.si.edu/sites/default/files/images/blog/mae_jemison2.png');
+ }
+ .box4{
+     background-image: url('https://www.travelandleisure.com/thmb/OAd5lC0gRcCP1C-nHEUcZ_WLSic=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunrise-2014-EARTH1116-594c4713c21949f7b8444d7f1856fed3.jpg');
+ }
+ .article_button{
+     background: transparent;
+     font-weight: bold;
+     border: 0;
+     font-size: 25px;
+     transition: transform 0.3s;
+ }
+.article_button:hover {
+    transition: scale(1.5);
+}
+#article1{
+    background-image: url('https://images6.alphacoders.com/678/678652.jpg');
+}
+.article_div{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.text_section{
+    position: relative;
+    top: 50%;
+    left: 20px; 
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+}
+.text_section h1{
+    font-size: 70px;
+}
